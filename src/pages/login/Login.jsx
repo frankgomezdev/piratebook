@@ -7,9 +7,9 @@ const Login = () => {
 
   const { login } = useContext(AuthContext);
 
-  // const handleLogin = () => {
-  //   login();
-  // }
+  const handleLogin = () => {
+    login();
+  }
 
   return (
     <div className="login">
@@ -29,7 +29,7 @@ const Login = () => {
             <input type="text" placeholder="Username"/>
             <input type="password" placeholder="Password"/>
             {/* <button onClick={handleLogin}>Login</button> */}
-            <Link to='/'>
+            <Link to='/home'>
           <button>Login</button>
           </Link>
           </form>
